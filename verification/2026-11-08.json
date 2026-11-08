@@ -1,0 +1,118 @@
+{
+  "nativeVerification": {
+    "checkedAtUTC": "2026-11-08T15:20:44.502Z",
+    "runId": "tencent-skills-bcAZs7",
+    "modelRequested": "gpt-6.1-sol",
+    "liveQQContextUsed": false,
+    "qqMessagesSent": 0,
+    "generationRequested": false,
+    "scenarios": [
+      {
+        "name": "reminder",
+        "passed": true,
+        "skillRead": true,
+        "calls": [
+          {
+            "server": "qqbot",
+            "tool": "qq_status",
+            "success": true
+          },
+          {
+            "server": "qqbot",
+            "tool": "qq_reminder",
+            "action": "add",
+            "success": true
+          },
+          {
+            "server": "qqbot",
+            "tool": "qq_reminder",
+            "action": "list",
+            "success": true
+          },
+          {
+            "server": "qqbot",
+            "tool": "qq_reminder",
+            "action": "remove",
+            "success": true
+          },
+          {
+            "server": "qqbot",
+            "tool": "qq_reminder",
+            "action": "list",
+            "success": true
+          }
+        ],
+        "persistedIdCreatedAndRemoved": true,
+        "actualDeliveryTested": false
+      },
+      {
+        "name": "media",
+        "passed": true,
+        "skillsRead": [
+          {
+            "name": "qqbot-media",
+            "read": true
+          },
+          {
+            "name": "qq-chat",
+            "read": true
+          }
+        ],
+        "calls": [],
+        "routeVerified": true
+      },
+      {
+        "name": "chat",
+        "passed": true,
+        "noDiagnosticReply": true,
+        "calls": []
+      }
+    ],
+    "discovered": [
+      {
+        "name": "qq-chat",
+        "enabled": true
+      },
+      {
+        "name": "qq-speech",
+        "enabled": true
+      },
+      {
+        "name": "tonso-blog-image2",
+        "enabled": true
+      },
+      {
+        "name": "qqbot-media",
+        "enabled": true
+      },
+      {
+        "name": "qqbot-remind",
+        "enabled": true
+      }
+    ],
+    "passed": true,
+    "forbiddenSendAttempts": 0,
+    "interactiveRequests": [],
+    "stderrBytes": 332,
+    "reminderResidue": 0,
+    "recordedQQReceipts": 0
+  },
+  "skillManifestValidation": {
+    "passed": true,
+    "skillsValidated": 5
+  },
+  "sourcePackageHashes": {
+    "skills/qq-chat/LICENSE": "1a1013993131e7699c9da0598254b314276ec93b3d6821a6cce5efc97e6c47f9",
+    "skills/qq-chat/SKILL.md": "2f612cc136f38952bf542c8febdcf60c0f7665078daa25af949427861812f64f",
+    "skills/qqbot-remind/LICENSE": "1a1013993131e7699c9da0598254b314276ec93b3d6821a6cce5efc97e6c47f9",
+    "skills/qqbot-remind/SKILL.md": "4e2976bec8863c7b22bc695af096a2e589ef55c020aa61ab9bf70c1e4f724a41",
+    "skills/qq-speech/LICENSE": "1a1013993131e7699c9da0598254b314276ec93b3d6821a6cce5efc97e6c47f9",
+    "skills/qq-speech/SKILL.md": "8e2850a5935b8c129704e6b90a2e6ea262d8b46da4b7a2ca05d0b1fce9b954dc",
+    "skills/qqbot-media/LICENSE": "1a1013993131e7699c9da0598254b314276ec93b3d6821a6cce5efc97e6c47f9",
+    "skills/qqbot-media/SKILL.md": "d8246d1bd0f6de5aad23f5817ea0a71adcbbf055b9517a0676c3afc0c21ab963",
+    "skills/tonso-blog-image2/LICENSE": "1a1013993131e7699c9da0598254b314276ec93b3d6821a6cce5efc97e6c47f9",
+    "skills/tonso-blog-image2/SKILL.md": "42a22da9f10a7d2e9c626808f38ac7c99f9060bfbe731547f1649e1ec8e67bcc"
+  },
+  "verifierSha256": "74ea88e79d67724da796301205a497a721bf7df285231a8e0eb6aea35e8d4495",
+  "upstreamCommit": "89988812442583bf47c34b89f9abf5fd4b85df0b"
+}

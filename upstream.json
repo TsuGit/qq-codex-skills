@@ -1,0 +1,17 @@
+{
+  "repository": "https://github.com/tencent-connect/openclaw-qqbot",
+  "commit": "89988812442583bf47c34b89f9abf5fd4b85df0b",
+  "packageVersion": "2.0.4",
+  "license": "MIT",
+  "adaptedFor": "QQ to native Codex app-server, current scoped qqbot MCP broker",
+  "reminderReference": "skills/qqbot-remind/SKILL.md",
+  "mediaReferences": [
+    "src/outbound/media-send.ts",
+    "src/adapter/media.ts",
+    "src/dispatch/body-assembler.ts"
+  ],
+  "mediaSkillIsNewAdaptation": true,
+  "speechSkill": "Codex-only rewrite of the existing shared speech guidance using the current qq_speech tool schema",
+  "excluded": ["OpenClaw cron/runtime interfaces", "Guild qqbot-channel", "qqbot-upgrade"],
+  "runtimePluginReplaced": false
+}

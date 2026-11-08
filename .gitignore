@@ -1,0 +1,10 @@
+.DS_Store
+*.secret.*
+.env
+.env.*
+node_modules/
+__pycache__/
+auth.json
+private-native.json
+*.bundle
+.private/

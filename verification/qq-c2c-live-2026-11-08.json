@@ -1,0 +1,125 @@
+{
+  "date": "2026-11-08",
+  "liveQQC2CUsed": true,
+  "uiMessagesActuallySent": true,
+  "model": "gpt-6.1-sol",
+  "reasoningEffort": "xhigh",
+  "allRequestedChecksPassed": true,
+  "privateDataIncluded": false,
+  "userReadStatusVerified": false,
+  "paidImageGenerationTested": false,
+  "scenarios": {
+    "initialGreeting": {
+      "receivedAtUTC": "2026-11-08T15:26:30.036Z",
+      "modelCompletedAtUTC": "2026-11-08T15:26:54.096Z",
+      "qqReceiptAtUTC": "2026-11-08T15:26:55.024Z",
+      "replyElapsedSeconds": 24.988,
+      "platformAcknowledged": true,
+      "qqChatSkillReadAtUTC": "2026-11-08T15:26:50.545Z"
+    },
+    "naturalChat": {
+      "receivedAtUTC": "2026-11-08T15:29:08.271Z",
+      "modelCompletedAtUTC": "2026-11-08T15:29:20.346Z",
+      "qqReceiptAtUTC": "2026-11-08T15:29:21.233Z",
+      "replyElapsedSeconds": 12.962,
+      "platformAcknowledged": true,
+      "diagnosticReply": false,
+      "mcpCalls": [],
+      "nativeCommandCount": 0,
+      "passed": true
+    },
+    "file": {
+      "receivedAtUTC": "2026-11-08T15:29:51.521Z",
+      "qqReceiptAtUTC": "2026-11-08T15:30:19.107Z",
+      "deliveryElapsedSeconds": 27.586,
+      "tool": "qq_send_media",
+      "kind": "file",
+      "platformAcknowledged": true,
+      "desktopClientDownloadNotificationObserved": true,
+      "passed": true,
+      "desktopClientFileVisible": true
+    },
+    "reminder": {
+      "receivedAtUTC": "2026-11-08T15:31:02.594Z",
+      "registeredAtUTC": "2026-11-08T15:31:17.291Z",
+      "scheduleType": "once",
+      "diagnostic": false,
+      "dueAtUTC": "2026-11-08T15:32:11.597Z",
+      "qqReceiptAtUTC": "2026-11-08T15:32:13.628Z",
+      "dueToReceiptSeconds": 2.031,
+      "platformAcknowledged": true,
+      "desktopClientReminderVisible": true,
+      "deliveryAttempts": 1,
+      "deliveries": 1,
+      "lastErrorCode": null,
+      "cleanupReceivedAtUTC": "2026-11-08T15:32:42.480Z",
+      "removedAtUTC": "2026-11-08T15:32:49.487Z",
+      "cleanupQQReceiptAtUTC": "2026-11-08T15:32:53.228Z",
+      "sameRegisteredTestJobRemoved": true,
+      "otherReminderMutations": 0,
+      "testReminderResidue": 0,
+      "mcpCalls": [
+        {
+          "tool": "qq_status",
+          "success": true
+        },
+        {
+          "tool": "qq_reminder",
+          "action": "add",
+          "success": true
+        },
+        {
+          "tool": "qq_reminder",
+          "action": "list",
+          "success": true
+        },
+        {
+          "tool": "qq_reminder",
+          "action": "remove",
+          "success": true
+        }
+      ],
+      "passed": true
+    },
+    "speech": {
+      "initialAttemptAtUTC": "2026-11-08T15:30:10.570Z",
+      "tool": "qq_speech",
+      "action": "tts",
+      "initialErrorCode": "SPEECH_FAILED",
+      "initialVoiceReceiptConfirmed": false,
+      "recoveryPending": false,
+      "retestReceivedAtUTC": "2026-11-08T15:34:47.463Z",
+      "conversionCompletedAtUTC": "2026-11-08T15:35:09.483Z",
+      "conversionSucceeded": true,
+      "outputFormat": "mp3",
+      "outputBytes": 14400,
+      "conversionCreatesMessage": false,
+      "sendTool": "qq_send_media",
+      "sendKind": "voice",
+      "qqReceiptAtUTC": "2026-11-08T15:35:18.157Z",
+      "deliveryElapsedSeconds": 30.694,
+      "platformAcknowledged": true,
+      "modelCompletedAtUTC": "2026-11-08T15:35:21.369Z",
+      "finalQQReceiptAtUTC": "2026-11-08T15:35:22.145Z",
+      "desktopClientVoiceVisible": true,
+      "mcpCalls": [
+        {
+          "tool": "qq_status",
+          "success": true
+        },
+        {
+          "tool": "qq_speech",
+          "action": "tts",
+          "success": true
+        },
+        {
+          "tool": "qq_send_media",
+          "kind": "voice",
+          "success": true
+        }
+      ],
+      "passed": true,
+      "desktopClientVoiceLabelSeconds": 2
+    }
+  }
+}
